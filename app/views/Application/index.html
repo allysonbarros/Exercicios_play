@@ -1,0 +1,30 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<h1>Soma entre dois numeros!</h1>
+#{form @Application.somar()}
+	<p>
+		<label for="num1">Digite um Numero</label><br/>
+		<input type="text" name="num1" />
+	</p>
+	<p>
+		<label for="num2">Digite outro Numero</label><br/>
+		<input type="text" name="num2" />
+	</p>
+	<p>
+		<input type="submit" value="Somar!" />
+	</p>
+#{/form}
+
+<hr />
+
+<h1>Gerar Tabuada de um numero!</h1>
+#{form @Application.tabuada()}
+	<p>
+		<label for="num1">Digite um Numero</label><br/>
+		<input type="text" name="numero" />
+	</p>
+	<p>
+		<input type="submit" value="Gerar Tabuada!" />
+	</p>
+#{/form}
